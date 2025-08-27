@@ -7,7 +7,7 @@ SGE - Marcas
 {% block content %}
 <div class="row mb-3">
     <div class="col-md-6">
-        <form method="get" action="{% url 'brands_list' %}">
+        <form method="get" action="{% url 'brand_list' %}">
             <div class="input-group">
                 <input type="text" class="form-control" name="name" placeholder="Nome" value="{{ request.GET.name }}">
                 <button type="submit" class="btn btn-primary">
@@ -18,7 +18,7 @@ SGE - Marcas
     </div>
 
     <div class="col-md-6">
-        <a href="{% url 'brands_create' %}" class="btn btn-success float-end">
+        <a href="{% url 'brand_create' %}" class="btn btn-success float-end">
             <i class="bi bi-plus"></i> Nova Marca
         </a>
     </div>
